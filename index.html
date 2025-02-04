@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h2 id="flagsLeft">0/195</h2>
+        <h2 id="score">Score: 0</h2>
+        <h2 id="timer">30s</h2>
+    </div>
+    
+    <h1>Guess the Country Name</h1>
+    
+    <div class="container">
+        <img id="flag" src="" alt="Country Flag">
+        <div id="options">
+            <button class="option" onclick="checkAnswer(0)"></button>
+            <button class="option" onclick="checkAnswer(1)"></button>
+            <button class="option" onclick="checkAnswer(2)"></button>
+            <button class="option" onclick="checkAnswer(3)"></button>
+	        
+        </div>
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
