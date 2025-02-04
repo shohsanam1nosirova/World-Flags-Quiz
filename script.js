@@ -5,7 +5,7 @@ let score = 0;
 let answeredFlags = 0;
 let totalFlags = 195;
 let timer;
-let timeLeft = 5;
+let timeLeft = 7;
 
 // Fetch country data
 fetch("https://restcountries.com/v3.1/all")
@@ -56,7 +56,7 @@ function loadOptions() {
 }
 
 function resetTimer() {
-    timeLeft = 5;
+    timeLeft = 7;
     document.getElementById("timer").innerText = `Time Left: ${timeLeft}s`;
     if (timer) clearInterval(timer);
     timer = setInterval(() => {
